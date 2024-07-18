@@ -16,9 +16,11 @@
      * [Wann macht Kubernetes Sinn, wann nicht?](/kubernetes/wann-sinnvoll-wann-nicht.md)   
      * [Aufbau mit helm,OpenShift,Rancher(RKE),microk8s](/kubernetes/aufbau-helm-microk8s-kubernetes.md)
      * [Welches System ? (minikube, micro8ks etc.)](welches-system.md)
-     * [Installation - Welche Komponenten from scratch](/kubernetes/installation-components-overview.md)
+     * [Installation - Welche Komponenten from scratch](/kubernetes/installation-components-overview.md)  
 
-  1. kubectl 
+  1. kubectl installieren und einrichten
+     * [Ubuntu client aufsetzen](/tipps-tricks/ubuntu-client.md)
+     * [bash-completion](/kubectl/bash-completion.md) 
      * [kubectl einrichten mit namespace](/kubectl/kubectl-einrichten.md)
      * [kubectl cheatsheet kubernetes](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 
@@ -264,8 +266,6 @@
      * Blue Green Deployment (Devs/Ops) 
 
   1. Tipps & Tricks 
-     * [Ubuntu client aufsetzen](/tipps-tricks/ubuntu-client.md)
-     * [bash-completion](/kubectl/bash-completion.md) 
      * [Alias in Linux kubectl get -o wide](/kubectl/alias-o-wide.md)
      * [vim einrückung für yaml-dateien](/vim/vim-yaml.md)
      * [kubectl spickzettel](/kubectl/spickzettel.md)
