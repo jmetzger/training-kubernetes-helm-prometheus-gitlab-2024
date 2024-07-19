@@ -18,8 +18,8 @@ kubectl create secret generic mariadb-secret --dry-run=client -o yaml --from-lit
 
 ```
 kubectl apply -f .
-kubectl get cm
-kubectl get cm mariadb-secret -o yaml
+kubectl get secret
+kubectl get secret mariadb-secret -o yaml
 ```
 
 
