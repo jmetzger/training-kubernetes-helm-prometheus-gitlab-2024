@@ -19,8 +19,8 @@
      * [Installation - Welche Komponenten from scratch](/kubernetes/installation-components-overview.md)  
 
   1. Kubernetes - Cluster installieren (microk8s)
-    
-
+     * [microk8s mit snap auf Ubuntu installieren](microk8s/installation-ubuntu-snap.md)
+      
   1. kubectl installieren und einrichten
      * [Ubuntu client aufsetzen](/tipps-tricks/ubuntu-client.md)
      * [bash-completion](/kubectl/bash-completion.md) 
