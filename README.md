@@ -84,8 +84,8 @@
   1. Kubernetes Autoscaling 
      * [Kubernetes Autoscaling](/kubernetes/autoscaling.md)
 
-  1. Kubernetes Secrets / ConfigMap 
-     * [Configmap Example 1](/kubectl-examples/06-configmap.md)
+  1. Kubernetes Secrets / ConfigMap
+     * [Secret with mariadb](kubectl-examples/06b-secret-mariadb.md)
      * [Secrets Example 1](kubernetes/secrets/uebung-secrets.md)
      * [Änderung in ConfigMap erkennen und anwenden](https://github.com/stakater/Reloader)
     
