@@ -1,6 +1,6 @@
-# ConfigMap Example (Mariadb) 
+# Secret Example (Mariadb) 
 
-## Schritt 1: configmap 
+## Schritt 1: secret 
 
 ```
 cd 
