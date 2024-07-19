@@ -20,6 +20,7 @@
 
   1. Kubernetes - Cluster installieren (microk8s)
      * [microk8s mit snap auf Ubuntu installieren](microk8s/installation-ubuntu-snap.md)
+     * [microk8s nodes zum cluster hinzufügen - cluster erstellen](microk8s/cluster.md)
       
   1. kubectl installieren und einrichten
      * [Ubuntu client aufsetzen](/tipps-tricks/ubuntu-client.md)
