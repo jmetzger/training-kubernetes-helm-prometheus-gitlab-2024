@@ -18,6 +18,9 @@
      * [Welches System ? (minikube, micro8ks etc.)](welches-system.md)
      * [Installation - Welche Komponenten from scratch](/kubernetes/installation-components-overview.md)  
 
+  1. Kubernetes - Cluster installieren (microk8s)
+    
+
   1. kubectl installieren und einrichten
      * [Ubuntu client aufsetzen](/tipps-tricks/ubuntu-client.md)
      * [bash-completion](/kubectl/bash-completion.md) 
