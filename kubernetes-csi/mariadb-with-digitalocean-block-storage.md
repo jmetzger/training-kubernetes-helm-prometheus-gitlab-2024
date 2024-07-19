@@ -2,7 +2,17 @@
 
   * How to persistently use mariadb with a storage class / driver nfs.csi.
 
-## Step 3: PVC, Configmap, Deployment 
+## Step 1: PVC, Configmap, Deployment 
+
+```
+cd
+mkdir -p manifests
+cd manifests
+mkdir -p storage-do
+cd storage-do
+nano 01-pvc.yaml
+```
+
 
 ```
 apiVersion: v1
@@ -19,7 +29,11 @@ spec:
 ```
 
 ```
-## 01-configmap.yml
+nano 02-configmap.yml
+```
+
+```
+## 02-configmap.yml
 kind: ConfigMap
 apiVersion: v1
 metadata:
@@ -30,7 +44,10 @@ data:
 ```
 
 ```
-#deploy.yml
+nano 03-deploy.yml
+```
+
+```
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -59,4 +76,8 @@ spec:
       - name: persistent-storage
         persistentVolumeClaim:
           claimName: pvc-nfs-dynamic-mariadb
+```
+
+```
+kubectl apply -f .
 ```
