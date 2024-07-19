@@ -2,7 +2,9 @@
 
 ## Pods / Deployment 
 
-### enableServiceLinks 
+### Bereich: Sicherheit
+
+#### enableServiceLinks 
 
 ```
 Umgebungsvariablen mit den Services setzen.
@@ -14,5 +16,13 @@ Frage ist hier: Brauche ich das für meine Applikation
 #
 pod:
   spec:
-     enableServiceLinks: "false"
+    enableServiceLinks: "false"
+```
+
+####  automountServiceAccountToken
+
+```
+pod:
+  spec:
+    automountServiceAccountToken: "false"
 ```
