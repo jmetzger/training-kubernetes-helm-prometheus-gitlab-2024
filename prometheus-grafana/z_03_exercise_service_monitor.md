@@ -130,13 +130,13 @@ kubectl apply -f .
 ## ServiceMonitor: Step 4: Connect to service 
 
 ```
-kubectl run -it podtest --image busybox
+kubectl run -it --rm podtest --image busybox
 ```
 
 ```
 # Do this 5 x 
-wget http://testapp-prometheus-demo
-wget http://testapp-prometheus-demo/prometheus
+wget -O - http://testapp-prometheus-demo
+wget -O - http://testapp-prometheus-demo/prometheus
 
 ```
 
