@@ -48,7 +48,18 @@ helm upgrade prometheus prometheus-community/kube-prometheus-stack -f values.yml
 ## Step 5: Extract username and password of grafana 
 
 ```
+#admin
 kubectl -n monitoring get secrets grafana -o jsonpath='{.data.admin-user}' | base64 -d
+#prom-operator 
 kubectl -n monitoring get secrets grafana -o jsonpath='{.data.admin-password}' | base64 -d
 ```
+
+## Step 6: Now connect to grafana dashboard 
+
+```
+# in browser
+http://grafana.tln1.t3isp.de
+# enter the credentials from Step 5
+```
+
 
