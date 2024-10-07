@@ -9,7 +9,7 @@ grafana.tln1  A 167.45.23.21
 ```
 
 
-## Steü 3: adajust values.yml 
+## Step 3: adajust values.yml 
 
 ```
 fullnameOverride: prometheus
@@ -34,10 +34,15 @@ prometheus-node-exporter:
 
 ```
 
-## Step 4: Run upgrade of installation 
+## Step 4: Run upgrade or install of installation 
+
+  * Important: Please be careful about different versions (59.1 -> 65.1. have breaking changes)
+  * So it is more safe to delete the crds firstly or evaluate which crds are present 
 
 ```
 helm -n monitoring list
 helm upgrade prometheus prometheus-community/kube-prometheus-stack -f values.yml --install --namespace monitoring --create-namespace --version 65.1.0
 
 ```
+
+## Step 5: 
