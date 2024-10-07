@@ -136,7 +136,7 @@ kubectl run -it podtest --image busybox
 ```
 # Do this 5 x 
 wget http://testapp-prometheus-demo
-wget http://testapp-prometheus-demo/metrics 
+wget http://testapp-prometheus-demo/prometheus
 
 ```
 
