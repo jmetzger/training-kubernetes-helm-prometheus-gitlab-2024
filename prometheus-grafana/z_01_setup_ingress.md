@@ -9,7 +9,7 @@ grafana.tln1  A 167.45.23.21
 ```
 
 
-## Step 3: adajust values.yml 
+## Step 3: Adjust values.yml 
 
 ```
 fullnameOverride: prometheus
@@ -45,4 +45,10 @@ helm upgrade prometheus prometheus-community/kube-prometheus-stack -f values.yml
 
 ```
 
-## Step 5: 
+## Step 5: Extract username and password of grafana 
+
+```
+kubectl -n monitoring get secrets grafana -o jsonpath='{.data.admin-user}' | base64 -d
+kubectl -n monitoring get secrets grafana -o jsonpath='{.data.admin-password}' | base64 -d
+```
+
