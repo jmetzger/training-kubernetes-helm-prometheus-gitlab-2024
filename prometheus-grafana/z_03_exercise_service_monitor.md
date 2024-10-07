@@ -167,6 +167,13 @@ spec:
 kubectl apply -f .
 ```
 
+## ServiceMonitor: Step 6: Check if config was changed in prometheus 
+
+```
+# port-forwarding and evtl. ssh-tunnel needs to be set 
+http://localhost:9090
+```
+
 
   * https://spacelift.io/blog/prometheus-operator#how-to-set-up-servicemonitor-and-metrics-sources
 
