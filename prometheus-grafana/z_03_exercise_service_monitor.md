@@ -152,7 +152,16 @@ kind: ServiceMonitor
 metadata:
   name: testapp-prometheus-servicemonitor
   labels:
-    release: kube-prometheus-stack
+
+# According to:
+# prometheus - server object 
+# kubectl -n monitoring get prometheus -o yaml | grep -A 4 serviceMonitorSelector 
+#
+# serviceMonitorSelector:
+#      matchLabels:
+#        release: prometheus
+
+    release: prometheus 
 spec:
   endpoints:
     - port: http
