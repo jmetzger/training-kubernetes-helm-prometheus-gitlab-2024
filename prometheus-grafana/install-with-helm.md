@@ -56,6 +56,7 @@ kubectl -n monitoring port-forward svc/prometheus-prometheus 9090 &
 ### Step 3.2: Start a tunnel in (from) your local-system to the server 
 
 ```
+# ip is the ip of the client machne (jump host) 
 ssh -L 9090:localhost:9090 tln1@164.92.129.7
 ```
 
@@ -80,8 +81,10 @@ kubectl -n monitoring port-forward grafana-56b45d8bd9-bp899 3000 &
 ### Step 4.2: Start a tunnel in (from) your local-system to the server 
 
 ```
+# 164.. -> ip of lcient machine (jump-server) 
 ssh -L 3000:localhost:3000 tln1@164.92.129.7
 ```
+
 
 
 
