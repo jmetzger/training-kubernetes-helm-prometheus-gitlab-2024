@@ -140,9 +140,32 @@ wget -O - http://testapp-prometheus-demo/prometheus
 
 ```
 
+## ServiceMonitor: Step 5: Rollout ServiceMonitor 
 
+```
+nano testapp-service-monitor.yaml
+```
 
+```
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: testapp-prometheus-servicemonitor
+  labels:
+    release: kube-prometheus-stack
+spec:
+  endpoints:
+    - port: http
+      path: /prometheus
+      interval: 15s
+  selector:
+    matchLabels:
+      app: testapp-prometheus-demo
+```
 
+```
+kubectl apply -f .
+```
 
 
   * https://spacelift.io/blog/prometheus-operator#how-to-set-up-servicemonitor-and-metrics-sources
