@@ -143,6 +143,7 @@
         
   1. Documentation
      * [References](https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/deployment-v1/#DeploymentSpec)
+     * [Documentation Jobs + kubectl cp](kubectl-examples/99-jobs.md)
 
 
 ## Backlog (gitlab ci/cd) 
