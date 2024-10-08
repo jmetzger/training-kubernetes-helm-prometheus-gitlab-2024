@@ -76,10 +76,38 @@
      * [Examples running stages](/gitlab/03-example-running-stages.md) 
      * [Predefined Vars](/gitlab/04-predefined-vars.md)
      * [Variablen definieren](/gitlab/variables.md)
+     * [Example Defining and using artifacts](/gitlab/07-example-defining-and-using-artifacts.md)
+
+  1. gitlab ci/cd (Artifacts)
+     * [Pass artifacts between jobs in same stage](gitlab/artifacts/pass-between-jobs-in-same-stage.md)
+
+  1. gitlab ci/cd (Praxis II)
+     * [Mehrzeile Kommandos in gitlab ci-cd ausführen](/gitlab/jobs/script/multiline.md)
 
   1. gitlab ci/cd - Tipps & Kniffe
      * [Warum before_script ?](/gitlab/why-before-script.md)
      * [GIT_STRATEGY usw.](gitlab/git_strategy.md)
+
+ 1. gitlab-ci/cd - Workflows
+     * [Workflows + only start by starting pipeline](/gitlab/global/workflow.md)
+     * [Templates for branch and merge request workflow](workflow/templates-branch-merge-request-pipeline.md)
+    
+  1. gitlab-ci/cd - Variables
+     * [Variablen in Pipelines Web-Dialog anzeigen](variables/variables-in-pipeline-formular-anzeigen.md)
+
+  1. gitlab - ci/cd - Pipelines strukturieren / Templates 
+     * [Includes mit untertemplates](gitlab/include/pipeline-with-includes.md)
+     * [Parent/Child Pipeline](/gitlab/parent-child-pipeline.md)
+     * [Multiproject Pipeline / Downstream](/gitlab/multiproject-pipeline.md)
+     * [Vorgefertigte Templates verwenden](gitlab/include/templates.md)
+     * [Arbeiten mit extend und anchor - Dinge wiederverwenden](gitlab/cases/extend-and-anchor.md)
+    
+  1. gitlab - wann laufen jobs ? 
+     * [Job nur händisch über Pipelines starten](gitlab/rules/only-web.md)
+     * [Auch weiterlaufen, wenn Job fehlschlägt](gitlab/jobs/allow_failure.md)
+
+  1. gitlab ci/cd docker
+     * [Docker image automatisiert bauen - gitlab registry](/gitlab/09-use-gitlab-registry.md)
     
   1. gitlab ci/cd - Documentation 
      * [gitlab ci/cd predefined variables](https://docs.gitlab.com/ee/ci/variables/predefined_variables.html)
@@ -106,11 +134,6 @@
      * [Netzwerkverbindung zum Pod testen](/tipps-tricks/verbindung-zu-pod-testen.md)
      * [Debug Container neben Container erstellen](kubernetes-networks/debug-container.md)
      
-  1. Kubernetes Administration /Upgrades 
-     * [Kubernetes Administration / Upgrades](kubernetes-cluster-update-path.md)
-     * [Terminierung von Container vermeiden](avoid-termination-container.md)
-     * [Praktische Umsetzung RBAC anhand eines Beispiels (Ops)](/kubernetes/rbac-create-user-multi.md)
-
   1. Weiter lernen 
      * [Lernumgebung](https://killercoda.com/)
      * [Bestimmte Tasks lernen](https://kubernetes.io/docs/tasks/configure-pod-container/assign-memory-resource/)
@@ -126,36 +149,10 @@
   1. gitlab ci/cd (Praxis I)
      * [Variablen überschreiben/leeren](gitlab/cases/variablen-ueberschreiben-leeren.md)
      * [Rules](/gitlab/05-rules.md)
-     * [Example Defining and using artifacts](/gitlab/07-example-defining-and-using-artifacts.md)
-
-  1. gitlab ci/cd (Artifacts)
-     * [Pass artifacts between jobs in same stage](gitlab/artifacts/pass-between-jobs-in-same-stage.md)
 
   1. gitlab ci/cd (Praxis II)
-     * [Mehrzeile Kommandos in gitlab ci-cd ausführen](/gitlab/jobs/script/multiline.md)
      * [Kommandos auf Zielsystem mit ssh ausführen (auch multiline)](gitlab/jobs/script/ssh-multiline.md)
 
-  1. gitlab-ci/cd - Workflows
-     * [Workflows + only start by starting pipeline](/gitlab/global/workflow.md)
-     * [Templates for branch and merge request workflow](workflow/templates-branch-merge-request-pipeline.md)
-    
-  1. gitlab-ci/cd - Variables
-     * [Variablen in Pipelines Web-Dialog anzeigen](variables/variables-in-pipeline-formular-anzeigen.md)
-
-  1. gitlab - ci/cd - Pipelines strukturieren / Templates 
-     * [Includes mit untertemplates](gitlab/include/pipeline-with-includes.md)
-     * [Parent/Child Pipeline](/gitlab/parent-child-pipeline.md)
-     * [Multiproject Pipeline / Downstream](/gitlab/multiproject-pipeline.md)
-     * [Vorgefertigte Templates verwenden](gitlab/include/templates.md)
-     * [Arbeiten mit extend und anchor - Dinge wiederverwenden](gitlab/cases/extend-and-anchor.md)
-    
-  1. gitlab - wann laufen jobs ? 
-     * [Job nur händisch über Pipelines starten](gitlab/rules/only-web.md)
-     * [Auch weiterlaufen, wenn Job fehlschlägt](gitlab/jobs/allow_failure.md)
-
-  1. gitlab ci/cd docker
-     * [Docker image automatisiert bauen - gitlab registry](/gitlab/09-use-gitlab-registry.md)
-    
   1. gitlab ci/cd docker compose
      * [Docker compose local testen](gitlab/docker-compose/01-docker-compose-local-testen.md)
      * [Docker compose über ssh](gitlab/docker-compose/02-docker-compose-ssh.md)
@@ -297,6 +294,11 @@
   
   1. Interna von Kubernetes 
      * [OCI,Container,Images Standards](docker-alternatives-kubernetes.md)
+    
+  1. Kubernetes Administration /Upgrades 
+     * [Kubernetes Administration / Upgrades](kubernetes-cluster-update-path.md)
+     * [Terminierung von Container vermeiden](avoid-termination-container.md)
+     * [Praktische Umsetzung RBAC anhand eines Beispiels (Ops)](/kubernetes/rbac-create-user-multi.md)
    
   1. Andere Systeme / Verschiedenes  
      * [Kubernetes vs. Cloudfoundry](kubernetes-vs-cloudfoundry.md)
