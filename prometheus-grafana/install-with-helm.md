@@ -58,16 +58,21 @@ helm -n monitoring get notes prometheus
 
 # Get pod that runs prometheus 
 kubectl -n monitoring get service 
-kubectl -n monitoring port-forward svc/prometheus-prometheus 9090 &
+kubectl -n monitoring port-forward svc/prometheus-prometheus 9091 &
 
 ```
 
 ### Step 3.2: Start a tunnel in (from) your local-system to the server 
 
+   * each tln using her or his tln-nr. e.g. 2 -> 9092 
+
 ```
 # ip is the ip of the client machne (jump host) 
-ssh -L 9090:localhost:9090 tln1@164.92.129.7
+ssh -L 9091:localhost:9091 tln1@164.92.129.7
 ```
+
+![image](https://github.com/user-attachments/assets/5df83fb0-047d-4b30-8d01-89d20ce67d49)
+
 
 ### Step 3.3: Open prometheus in your local browser 
 
