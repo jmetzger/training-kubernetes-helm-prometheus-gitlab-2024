@@ -252,11 +252,75 @@ wget -O - http://testapp-prometheus-demo/prometheus
 
 ![image](https://github.com/user-attachments/assets/8898bb72-115a-47cd-829a-697045f31e4a)
 
+## Service Monitor: Step 10: Add to grafana 
+
+```
+Open grafana:
+
+e.g.
+http://grafana.tln1.t3isp.de
+user: admin
+pass: prom-operator
+```
+
+```
+Click on: Dashboards -> New Dashboard
+```
+![image](https://github.com/user-attachments/assets/8c382221-4c9a-4d58-8687-9f967f7f9f00)
+
+
+```
+Click on: Add Visualization
+```
+
+```
+Select Data Source: Prometheus
+```
+
+![image](https://github.com/user-attachments/assets/6eca32fd-20a1-4622-91a5-1d5accd8e51d)
+
+```
+1. Search for your TotalRequests metric in the “Select metric” dropdown within the query builder at the bottom of the screen
+2. Click apply
+```
+
+![image](https://github.com/user-attachments/assets/56fd3ba8-6a66-411c-ada4-d75bec003bf5)
+
+```
+1. Click: Run Queries to see how it goes
+2. Click: Apply (top right on page)
+3. Click on the save item, and give the dashboard a name, e.g. Service Testapp
+(now you can find it under dashboards -> scroll down.
+```
+
+## Service Monitor: Step 11: Add it to the home screen  
+
+```
+Star the dashboard
+(Being in the dashboard, press the start at the top left of the screen)
+```
+
+![image](https://github.com/user-attachments/assets/f7e9e8a6-bb75-4efb-9657-edd7798f25de)
+
+```
+Set it for your user:
+(under: Home Dashboard)
+```
+
+![image](https://github.com/user-attachments/assets/631c967e-d9a6-413c-8788-77fd8bf60fc6)
+
+```
+Or under Organization (then it is for the whole organization)
+```
+
+![image](https://github.com/user-attachments/assets/fbb351f0-a72c-4310-8246-484a112d4bc6)
 
 
 
+```
+# Alternative would be setting it for Teams
+```
 
 ## Reference 
 
-  * https://spacelift.io/blog/prometheus-operator
-
+  * https://spacelift.io/blog/prometheus-operator#how-to-set-up-servicemonitor-and-metrics-sources
