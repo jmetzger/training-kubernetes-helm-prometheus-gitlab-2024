@@ -77,8 +77,8 @@ ssh -L 9091:localhost:9091 tln1@164.92.129.7
 ### Step 3.3: Open prometheus in your local browser 
 
 ```
-# in browser
-http://localhost:9090 
+# in browser with tln - nr, e.g. tln2 -> 9092
+http://localhost:9091
 ```
 
 ## Step 4: Connect to the grafana from the outside world 
