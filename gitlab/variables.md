@@ -4,6 +4,7 @@
 
 ```
 # Settings -> CI/CD -> Variables
+TEST_URL -> http://www.meinseite.de 
 ```
 
 ## Beispiele:
@@ -25,7 +26,8 @@ show_env:
   stage: build 
 
   variables:
-    TEST_JOB: lowrunner # variable mit lokalem Scope - nur in Job 
+    TEST_JOB: lowrunner # variable mit lokalem Scope - nur in Job
+    TEST_ENV: "Das überschreibt -> Prod aus globalem Scope"
     TEST_URL: http://www.test.de # Auch das überschreibt NICHT -> ... Settings -> CI/CD -> Variables 
 
   script:
