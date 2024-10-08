@@ -176,15 +176,81 @@ spec:
 kubectl apply -f .
 ```
 
-## ServiceMonitor: Step 6: Check if config was changed in prometheus 
+## ServiceMonitor: Step 6: Check in the logs, if it was detected 
+
+```
+kubectl -n monitoring logs prometheus-prometheus-prometheus-0 | grep -i testapp
+```
+
+
+## ServiceMonitor: Step 7: Check if config was changed in prometheus 
 
 ```
 # port-forwarding and evtl. ssh-tunnel needs to be set 
 http://localhost:9090
 ```
 
+```
+http://localhost:9090/config # Menu: Status -> Con![image](https://github.com/user-attachments/assets/09e00e98-0ce2-4eec-9564-5379ce8de08c)
+figuration
+```
 
-  * https://spacelift.io/blog/prometheus-operator#how-to-set-up-servicemonitor-and-metrics-sources
+```
+# Find the corresponding block -> job
+# This got automatically created, by having the object and detecting it. 
+scrape_configs:
+- job_name: serviceMonitor/default/testapp-prometheus-servicemonitor/0
+```
+
+## ServiceMonitor: Step 8: Check in Service Discovery (Raw Data)
+
+  * It shows, it has detected the endpoints of the service 
+  * It shows the labels it has found
+  * All labels starting with __ will not be written to database
+    * We will need to rewrite them 
+
+![image](https://github.com/user-attachments/assets/4ad8fd06-2fba-4ef7-9b19-d211e0f2682d)
+
+## ServiceMonitor: Step 9: Check in Targets (Rewritten Data)
+
+  * http://localhost:9090/targets?search= (Menu -> Status -> Targets)
+  * Shows the relabeled information (That is the way it is save in db and can be used, e.g. by grafana)
+  * (If you unfold it, also the discovered labels)
+
+  ![image](https://github.com/user-attachments/assets/445d5fcd-ed56-4976-94bd-255ad0caef4d)
+
+## ServiceMonitor: Step 10: Show the data 
+
+  * Go to main page: http://localhost:9090
+  * Search for: Total Requests, press Execute 
+  * Click on it: You will see the metrics collected
+
+![image](https://github.com/user-attachments/assets/a2858cc6-e257-40ed-8ed4-64c00150b114)
+
+  * Now click on graph -> you will see the information as graph
+
+![image](https://github.com/user-attachments/assets/d86f9071-42f2-462d-9201-2a96b933600d)
+
+  * Now rerun a call to the pod like earlier:
+
+
+```
+kubectl run -it --rm podtest --image busybox
+```
+
+```
+# Do this 5 x 
+wget -O - http://testapp-prometheus-demo
+wget -O - http://testapp-prometheus-demo/prometheus
+
+```
+
+  * Try again after 1 minute (Main Page -> Total Requests -> Table 
+    * You will see the last, increased value 
+  * Also Try: Main Page -> Total Requests -> Graph
+    * You will find a spike at the end of the Graph 
+
+![image](https://github.com/user-attachments/assets/8898bb72-115a-47cd-829a-697045f31e4a)
 
 
 
