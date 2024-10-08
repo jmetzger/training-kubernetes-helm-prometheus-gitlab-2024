@@ -4,7 +4,8 @@
 
 ```
 # Settings -> CI/CD -> Variables
-TEST_URL -> http://www.meinseite.de 
+TEST_URL -> http://www.meinseite.de  # masked
+TEST_CONTENT -> nicht maskiert 
 ```
 
 ## Beispiele:
