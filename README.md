@@ -51,6 +51,9 @@
 
   1. Kubernetes - Jobs
      * [Documentation Jobs + kubectl cp](kubectl-examples/99-jobs.md)
+    
+  1. Kuernetes Administration / Tipps & Tricks
+     [Hängenden Namespace löschen - Stuck](kubectl/delete-stuck-namespace.md)
 
   1. LoadBalancer on Premise (metallb)
      * [Metallb](load-balancer/metallb.md)
