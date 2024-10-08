@@ -17,11 +17,6 @@
      * [Aufbau mit helm,OpenShift,Rancher(RKE),microk8s](/kubernetes/aufbau-helm-microk8s-kubernetes.md)
      * [Welches System ? (minikube, micro8ks etc.)](welches-system.md)
      * [Installation - Welche Komponenten from scratch](/kubernetes/installation-components-overview.md)  
-
-  1. Kubernetes - Cluster installieren (microk8s)
-     * [microk8s mit snap auf Ubuntu installieren](microk8s/installation-ubuntu-snap.md)
-     * [microk8s nodes zum cluster hinzufügen - cluster erstellen](microk8s/cluster.md)
-     * [Connection von remote konfigurieren - kubectl](microk8s/connect-from-remote.md)
       
   1. kubectl installieren und einrichten
      * [Ubuntu client aufsetzen](/tipps-tricks/ubuntu-client.md)
@@ -53,9 +48,6 @@
      * [Permanente Weiterleitung mit Ingress](/kubectl-examples/05-ingress-permanent-redirect.md)
      * [ConfigMap Example](/kubectl-examples/06-configmap.md)
      * [ConfigMap Example MariaDB](/kubectl-examples/06a-configmap-mariadb.md)
-     * [Connect to external database](/databases/connect-to-external-db.md)
-     * [Hintergrund statefulsets](/kubernetes/statefulsets.md)
-     * [Example stateful set](/kubectl-examples/10-statefulset.md)
     
   1. LoadBalancer on Premise (metallb)
      * [Metallb](load-balancer/metallb.md)
@@ -66,49 +58,36 @@
      * [Beispiel mariadb](kubernetes-csi/example-mariadb.md)
 
   1. Helm (Kubernetes Paketmanager) 
-     * [Helm Grundlagen](/helm/grundlagen.md)
-     * [Helm Warum ?](/helm/warum.md)
-     * [Helm Example](/helm/example.md)
-
-  1. Helm (IDE - Support) 
-     * [Kubernetes-Plugin Intellij](https://www.jetbrains.com/help/idea/kubernetes.html)
-     * [Intellij - Helm Support Through Kubernetes Plugin](https://blog.jetbrains.com/idea/2018/10/intellij-idea-2018-3-helm-support/)
-  
-  1. Kubernetes Storage 
-     * [Praxis. Beispiel (Dev/Ops)](/shared-volumes/nfs-multiple.md)
-
-  1. Kubernetes Netzwerk 
-     * [Kubernetes Netzwerke Übersicht](kubernetes-networks/overview.md)
-     * [DNS - Resolution - Services](kubernetes-networks/dns-resolution-services.md)
-     * [Kubernetes Firewall / Cilium Calico](/kubernetes-network/callico/00-simple-example-multi.md)
-     * [Sammlung istio/mesh](sammlung-istio.md)
-
-  1. Kubernetes NetworkPolicy (Firewall)
-     * [Kubernetes Network Policy Beispiel](kubernetes-networkpolicy/00-simple-exercises-group.md)    
-
-  1. Kubernetes Autoscaling 
-     * [Kubernetes Autoscaling](/kubernetes/autoscaling.md)
+     * [Warum ? (Dev/Ops)](/helm/warum.md)
+     * [Grundlagen / Aufbau / Verwendung (Dev/Ops)](/helm/grundlagen.md)
+     * [Praktisches Beispiel bitnami/mysql (Dev/Ops)](/helm/example.md) 
 
   1. Kubernetes Secrets / ConfigMap
      * [Secret with mariadb](kubectl-examples/06b-secret-mariadb.md)
      * [Secrets Example 1](kubernetes/secrets/uebung-secrets.md)
      * [Änderung in ConfigMap erkennen und anwenden](https://github.com/stakater/Reloader)
     
-  1. Kubernetes RBAC (Role based access control)
-     * [RBAC Übung kubectl](/kubernetes/rbac-create-user-kubernetes-1-25.md)
+  1. gitlab ci/cd - Überblick 
+     * [gitlab Architektur](gitlab/architecture.md)
+     * [Overview/Pipelines](/gitlab/01-ci-cd-overview.md)
 
-  1. Kubernetes Operator Konzept 
-     * [Ueberblick](kubernetes/operator/overview.md)   
+  1. gitlab ci/cd - Tipps & Kniffe
+     * [Warum before_script ?](/gitlab/why-before-script.md)
+     * [GIT_STRATEGY usw.](gitlab/git_strategy.md)
     
-  1. Kubernetes Deployment Strategies
-     * [Deployment green/blue,canary,rolling update](/deployment-strategies-en.md)
-     * [Praxis-Übung A/B Deployment](/kubectl-examples/08-ab-deployment.md)
+  1. gitlab ci/cd - Documentation 
+     * [gitlab ci/cd predefined variables](https://docs.gitlab.com/ee/ci/variables/predefined_variables.html)
+     * [.gitlab-ci.yml Reference](https://docs.gitlab.com/ee/ci/yaml/)
+     * [Referenz: global -> workflow](https://docs.gitlab.com/ee/ci/yaml/#workflow)
+     * [Referenz: global -> default](https://docs.gitlab.com/ee/ci/yaml/#default)
+
+  1. gitlab ci/cd - Documentation - Includes
+     * [includes](https://docs.gitlab.com/ee/ci/yaml/includes.html)
+     * [includes -> rules](https://docs.gitlab.com/ee/ci/yaml/includes.html#use-rules-with-include)
+     * [includes -> rules -> variables](https://docs.gitlab.com/ee/ci/yaml/#rulesvariables)
+     * [includes -> templates -> override-configuration](https://docs.gitlab.com/ee/ci/yaml/includes.html#override-included-configuration-values)
+     * [includes -> defaults](https://docs.gitlab.com/ee/ci/yaml/includes.html#use-default-configuration-from-an-included-configuration-file)
     
-  1. Kubernetes QoS / HealthChecks / Live / Readiness
-     * [Quality of Service - evict pods](kubernetes/qos-class.md)
-     * [LiveNess/Readiness - Probe / HealthChecks](probes/uebung-liveness.md)
-     * [Taints / Toleratioins](kubernetes/taints-tolerations.md)
-     
   1. Kubernetes Monitoring 
      * [Prometheus Monitoring Server (Overview)](prometheus/overview.md)
      * [Prometheus mit helm und grafana aufsetzen](prometheus-grafana/install-with-helm.md)
@@ -131,40 +110,22 @@
      * [Bestimmte Tasks lernen](https://kubernetes.io/docs/tasks/configure-pod-container/assign-memory-resource/)
      * [Udemy Online Training](https://www.udemy.com/course/certified-kubernetes-security-specialist/)
      * [Kubernetes Videos mit Hands On](https://www.youtube.com/watch?v=16fgzklcF7Y)
-
-  1. Documentation (Use Cases) 
-     * [Case Studies Kubernetes](https://kubernetes.io/case-studies/)
-     * [Use Cases](https://codilime.com/blog/harnessing-the-power-of-kubernetes-7-use-cases/)
-     
-  1. Interna von Kubernetes 
-     * [OCI,Container,Images Standards](docker-alternatives-kubernetes.md)
-   
-  1. Andere Systeme / Verschiedenes  
-     * [Kubernetes vs. Cloudfoundry](kubernetes-vs-cloudfoundry.md)
-     * [Kubernetes Alternativen](kubernetes-alternatives.md)
-     * [Hyperscaler vs. Kubernetes on Premise](hyperscaler-vs-kubernetes.md)
-     
-  1. Lokal Kubernetes verwenden 
-     * [Kubernetes in ubuntu installieren z.B. innerhalb virtualbox](/microk8s/installation-ubuntu-snap.md)
-     * [minikube](/minikube/installation.md)
-     * [rancher for desktop](https://github.com/rancher-sandbox/rancher-desktop/releases/tag/v1.9.1)
-     
-  1. Microservices 
-     * [Microservices vs. Monolith](/microservices/monolith-vs-microservice.md)
-     * [Monolith schneiden/aufteilen](/microservices/monolith-schneiden.md)
-     * [Strategic Patterns - wid monolith praktisch umbauen](microservices/strategic-patterns.md)
-     * [Literatur von Monolith zu Microservices](https://www.amazon.de/Vom-Monolithen-Microservices-bestehende-umzugestalten/dp/3960091400/)
-
-  1. Extras 
-     * [Install minikube on wsl2](installer/minikube-wsl2.md)
-     * [kustomize - gute Struktur für größere Projekte](/kustomize/kustomize-big-projects.md)
-     * [kustomize with helm](https://fabianlee.org/2022/04/18/kubernetes-kustomize-with-helm-charts/)
-    
+        
   1. Documentation
      * [References](https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/deployment-v1/#DeploymentSpec)
- 
 
 ## Backlog 
+
+  1. Kubernetes Deployment Strategies
+     * [Deployment green/blue,canary,rolling update](/deployment-strategies-en.md)
+     * [Praxis-Übung A/B Deployment](/kubectl-examples/08-ab-deployment.md)
+    
+  1. Kubernetes QoS / HealthChecks / Live / Readiness
+     * [Quality of Service - evict pods](kubernetes/qos-class.md)
+     * [LiveNess/Readiness - Probe / HealthChecks](probes/uebung-liveness.md)
+     * [Taints / Toleratioins](kubernetes/taints-tolerations.md)
+  
+## Backlog II
 
   1. Kubernetes - Überblick
      * [Allgemeine Einführung in Container (Dev/Ops)](overview-docker.md)
@@ -174,7 +135,7 @@
      * [Aufbau mit helm,OpenShift,Rancher(RKE),microk8s](/kubernetes/aufbau-helm-microk8s-kubernetes.md)
      * [Welches System ? (minikube, micro8ks etc.)](welches-system.md)
      * [Installation - Welche Komponenten from scratch](/kubernetes/installation-components-overview.md)
-  
+
   1. Kubernetes - microk8s (Installation und Management) 
      * [Installation Ubuntu - snap](microk8s/installation-ubuntu-snap.md)
      * [Remote-Verbindung zu Kubernetes (microk8s) einrichten](microk8s/connect-from-remote.md)
@@ -184,26 +145,9 @@
      * [Installation Kuberenetes Dashboard](/microk8s/dashboard.md) 
 
   1. Kubernetes Praxis API-Objekte 
-     * [Das Tool kubectl (Devs/Ops) - Spickzettel](/kubectl/spickzettel.md)
-     * [kubectl example with run](/kubectl/run-with-example.md)
-     * Arbeiten mit manifests (Devs/Ops)
-     * Pods (Devs/Ops)
-     * [kubectl/manifest/pod](/kubectl-examples/01-pod-nginx.md)
-     * ReplicaSets (Theorie) - (Devs/Ops)
-     * [kubectl/manifest/replicaset](/kubectl-examples/01a-replicaset-nginx.md)
-     * Deployments (Devs/Ops)
-     * [kubectl/manifest/deployments](/kubectl-examples/03-nginx-deployment.md)
-     * Services (Devs/Ops)
-     * [kubectl/manifest/service](/kubectl-examples/03b-service.md)
-     * DaemonSets (Devs/Ops)
-     * IngressController (Devs/Ops)
-     * [Hintergrund Ingress](/kubernetes/ingress.md) 
-     * [Documentation for default ingress nginx](https://kubernetes.github.io/ingress-nginx/user-guide/nginx-configuration/configmap/)
-     * [Beispiel Ingress](/kubectl-examples/04-ingress-nginx.md)
-     * [Beispiel mit Hostnamen](/kubectl-examples/04-ingress-nginx-with-hostnames.md)
-     * [Achtung: Ingress mit Helm - annotations](/ingress-mit-helm-class-achtung.md)
-     * [Permanente Weiterleitung mit Ingress](/kubectl-examples/05-ingress-permanent-redirect.md)
-     * [ConfigMap Example](/kubectl-examples/06-configmap.md)
+     * [Connect to external database](/databases/connect-to-external-db.md)
+     * [Hintergrund statefulsets](/kubernetes/statefulsets.md)
+     * [Example stateful set](/kubectl-examples/10-statefulset.md)
 
   1. Kubernetes - ENV - Variablen für den Container setzen
      * [ENV - Variablen - Übung](/kubernetes/uebungen-env-variablen.md)
@@ -221,6 +165,25 @@
      * [Wartung mit drain / uncordon (Ops)](/kubectl/uncordon-drain.md) 
      * [Ausblick AutoScaling (Ops)](/kubernetes/autoscaling.md) 
 
+  1. Helm (IDE - Support) 
+     * [Kubernetes-Plugin Intellij](https://www.jetbrains.com/help/idea/kubernetes.html)
+     * [Intellij - Helm Support Through Kubernetes Plugin](https://blog.jetbrains.com/idea/2018/10/intellij-idea-2018-3-helm-support/)
+  
+  1. Kubernetes Storage 
+     * [Praxis. Beispiel (Dev/Ops)](/shared-volumes/nfs-multiple.md)
+
+  1. Kubernetes Netzwerk 
+     * [Kubernetes Netzwerke Übersicht](kubernetes-networks/overview.md)
+     * [DNS - Resolution - Services](kubernetes-networks/dns-resolution-services.md)
+     * [Kubernetes Firewall / Cilium Calico](/kubernetes-network/callico/00-simple-example-multi.md)
+     * [Sammlung istio/mesh](sammlung-istio.md)
+
+  1. Kubernetes NetworkPolicy (Firewall)
+     * [Kubernetes Network Policy Beispiel](kubernetes-networkpolicy/00-simple-exercises-group.md)    
+
+  1. Kubernetes Autoscaling 
+     * [Kubernetes Autoscaling](/kubernetes/autoscaling.md)
+
   1. Kubernetes Storage 
      * Grundlagen (Dev/Ops)
      * Objekte PersistantVolume / PersistantVolumeClaim (Dev/Ops) 
@@ -233,11 +196,6 @@
      * IP per Pod
      * Inter Pod Communication ClusterDNS 
      * [Beispiel NetworkPolicies](/kubernetes-network/callico/00-simple-example-multi.md)
-
-  1. Kubernetes Paketmanagement (Helm) 
-     * [Warum ? (Dev/Ops)](/helm/warum.md)
-     * [Grundlagen / Aufbau / Verwendung (Dev/Ops)](/helm/grundlagen.md)
-     * [Praktisches Beispiel bitnami/mysql (Dev/Ops)](/helm/example.md) 
 
   1. Kustomize
      * [Beispiel ConfigMap - Generator](/kustomize/01-example-configmap.md)
@@ -288,16 +246,40 @@
   
   1. Fragen 
      * [Q and A](/q-and-a.md)
-     * [Kuberenetes und Ansible](/kubernetes-and-ansible.md)
+     * [Kubernetes und Ansible](/kubernetes-and-ansible.md)
+  
+  1. Interna von Kubernetes 
+     * [OCI,Container,Images Standards](docker-alternatives-kubernetes.md)
+   
+  1. Andere Systeme / Verschiedenes  
+     * [Kubernetes vs. Cloudfoundry](kubernetes-vs-cloudfoundry.md)
+     * [Kubernetes Alternativen](kubernetes-alternatives.md)
+     * [Hyperscaler vs. Kubernetes on Premise](hyperscaler-vs-kubernetes.md)
+     
+  1. Lokal Kubernetes verwenden 
+     * [Kubernetes in ubuntu installieren z.B. innerhalb virtualbox](/microk8s/installation-ubuntu-snap.md)
+     * [minikube](/minikube/installation.md)
+     * [rancher for desktop](https://github.com/rancher-sandbox/rancher-desktop/releases/tag/v1.9.1)
+     
+  1. Microservices 
+     * [Microservices vs. Monolith](/microservices/monolith-vs-microservice.md)
+     * [Monolith schneiden/aufteilen](/microservices/monolith-schneiden.md)
+     * [Strategic Patterns - wid monolith praktisch umbauen](microservices/strategic-patterns.md)
+     * [Literatur von Monolith zu Microservices](https://www.amazon.de/Vom-Monolithen-Microservices-bestehende-umzugestalten/dp/3960091400/)
+ 
+  1. Extras 
+     * [Install minikube on wsl2](installer/minikube-wsl2.md)
+     * [kustomize - gute Struktur für größere Projekte](/kustomize/kustomize-big-projects.md)
+     * [kustomize with helm](https://fabianlee.org/2022/04/18/kubernetes-kustomize-with-helm-charts/)
 
   1. Documentation
      * [Kubernetes mit VisualStudio Code](https://code.visualstudio.com/docs/azure/kubernetes)
      * [Kube Api Ressources - Versionierungsschema](/kubernetes/api-versionierung-lifetime.md)
      * [Kubernetes Labels and Selector](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/)
-    
-  1. Documentation - Sources
+       
+  1. Documentation (Use Cases) 
+     * [Case Studies Kubernetes](https://kubernetes.io/case-studies/)
+     * [Use Cases](https://codilime.com/blog/harnessing-the-power-of-kubernetes-7-use-cases/)
+
+  1. Documentation (Komponenten)
      * [controller manager](https://github.com/kubernetes/kubernetes/tree/release-1.29/cmd/kube-controller-manager/app/options)
-
-     
-  
-
