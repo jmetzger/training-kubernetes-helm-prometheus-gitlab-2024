@@ -70,6 +70,12 @@
   1. gitlab ci/cd - Überblick 
      * [gitlab Architektur](gitlab/architecture.md)
      * [Overview/Pipelines](/gitlab/01-ci-cd-overview.md)
+    
+  1. gitlab ci/cd - Praxis I
+     * [Using the test - template](/gitlab/02-example-testtemplate.md)
+     * [Examples running stages](/gitlab/03-example-running-stages.md) 
+     * [Predefined Vars](/gitlab/04-predefined-vars.md)
+     * [Variablen definieren](/gitlab/variables.md)
 
   1. gitlab ci/cd - Tipps & Kniffe
      * [Warum before_script ?](/gitlab/why-before-script.md)
@@ -114,7 +120,48 @@
   1. Documentation
      * [References](https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/deployment-v1/#DeploymentSpec)
 
-## Backlog 
+
+## Backlog (gitlab ci/cd) 
+
+  1. gitlab ci/cd (Praxis I)
+     * [Variablen überschreiben/leeren](gitlab/cases/variablen-ueberschreiben-leeren.md)
+     * [Rules](/gitlab/05-rules.md)
+     * [Example Defining and using artifacts](/gitlab/07-example-defining-and-using-artifacts.md)
+
+  1. gitlab ci/cd (Artifacts)
+     * [Pass artifacts between jobs in same stage](gitlab/artifacts/pass-between-jobs-in-same-stage.md)
+
+  1. gitlab ci/cd (Praxis II)
+     * [Mehrzeile Kommandos in gitlab ci-cd ausführen](/gitlab/jobs/script/multiline.md)
+     * [Kommandos auf Zielsystem mit ssh ausführen (auch multiline)](gitlab/jobs/script/ssh-multiline.md)
+
+  1. gitlab-ci/cd - Workflows
+     * [Workflows + only start by starting pipeline](/gitlab/global/workflow.md)
+     * [Templates for branch and merge request workflow](workflow/templates-branch-merge-request-pipeline.md)
+    
+  1. gitlab-ci/cd - Variables
+     * [Variablen in Pipelines Web-Dialog anzeigen](variables/variables-in-pipeline-formular-anzeigen.md)
+
+  1. gitlab - ci/cd - Pipelines strukturieren / Templates 
+     * [Includes mit untertemplates](gitlab/include/pipeline-with-includes.md)
+     * [Parent/Child Pipeline](/gitlab/parent-child-pipeline.md)
+     * [Multiproject Pipeline / Downstream](/gitlab/multiproject-pipeline.md)
+     * [Vorgefertigte Templates verwenden](gitlab/include/templates.md)
+     * [Arbeiten mit extend und anchor - Dinge wiederverwenden](gitlab/cases/extend-and-anchor.md)
+    
+  1. gitlab - wann laufen jobs ? 
+     * [Job nur händisch über Pipelines starten](gitlab/rules/only-web.md)
+     * [Auch weiterlaufen, wenn Job fehlschlägt](gitlab/jobs/allow_failure.md)
+
+  1. gitlab ci/cd docker
+     * [Docker image automatisiert bauen - gitlab registry](/gitlab/09-use-gitlab-registry.md)
+    
+  1. gitlab ci/cd docker compose
+     * [Docker compose local testen](gitlab/docker-compose/01-docker-compose-local-testen.md)
+     * [Docker compose über ssh](gitlab/docker-compose/02-docker-compose-ssh.md)
+     * [Docker compose classic über scp](gitlab/docker-compose/03-docker-compose-rollout-classic.md)
+
+## Backlog (last day)
 
   1. Kubernetes Deployment Strategies
      * [Deployment green/blue,canary,rolling update](/deployment-strategies-en.md)
