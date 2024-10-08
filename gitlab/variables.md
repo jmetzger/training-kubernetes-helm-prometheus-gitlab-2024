@@ -5,7 +5,7 @@
 ```
 # Settings -> CI/CD -> Variables
 TEST_URL -> http://www.meinseite.de  # masked
-TEST_CONTENT -> nicht maskiert 
+TEST_CONTENT -> als File-Type setzen mit Inhalt "tolle Sache"
 ```
 
 ## Beispiele:
