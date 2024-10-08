@@ -114,6 +114,7 @@
      * [Prometheus mit helm und grafana aufsetzen](prometheus-grafana/install-with-helm.md)
      * [Prometheus helm-chart, setup ingress](prometheus-grafana/z_01_setup_ingress.md)
      * [Prometheus-gui-walkthrough](prometheus-grafana/z_02_explore_prometheus.md)
+     * [Prometheus / blackbox exporter](prometheus-grafana/z_blackbox_exporter.md)
      * [Prometheus - Übung ServiceMonitor für neue App aufsetzen](prometheus-grafana/z_03_exercise_service_monitor.md)
 
   1. Tipps & Tricks 
