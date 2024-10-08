@@ -1,6 +1,7 @@
 # Prometheus with Grafana (Install with helm)
 
-  * using the kube-prometheus-stack (recommended !) 
+  * using the kube-prometheus-stack (recommended !)
+  * https://artifacthub.io/packages/helm/prometheus-community/kube-prometheus-stack
 
 ## Step 1: Prepare values-file  
 
