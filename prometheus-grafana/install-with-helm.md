@@ -40,7 +40,7 @@ helm repo add prometheus-community https://prometheus-community.github.io/helm-c
 helm install prometheus prometheus-community/kube-prometheus-stack -f values.yml --namespace monitoring --create-namespace --version 65.1.0
 ```
 
-## step 2.1 Check ob alles läuft 
+## Step 2.1 Check ob alles läuft 
 
 ```
 kubectl -n monitoring get all 
