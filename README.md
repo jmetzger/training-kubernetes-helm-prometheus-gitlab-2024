@@ -112,6 +112,7 @@
   1. Kubernetes Monitoring 
      * [Prometheus Monitoring Server (Overview)](prometheus/overview.md)
      * [Prometheus mit helm und grafana aufsetzen](prometheus-grafana/install-with-helm.md)
+     * [Prometheus - Übung ServiceMonitor für neue App aufsetzen](prometheus-grafana/z_03_exercise_service_monitor.md)
 
   1. Tipps & Tricks 
      * [Netzwerkverbindung zum Pod testen](/tipps-tricks/verbindung-zu-pod-testen.md)
