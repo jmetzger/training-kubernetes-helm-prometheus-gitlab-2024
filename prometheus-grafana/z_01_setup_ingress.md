@@ -2,6 +2,17 @@
 
 ## Step 1: Prerequsites: Install Ingress Controller
 
+```
+helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+helm install nginx-ingress ingress-nginx/ingress-nginx --namespace ingress --create-namespace 
+```
+
+```
+kubectl -n ingress get pods
+kubectl -n ingress get svc -w
+```
+
+
 ## Step 2: Add ip to dns 
 
 ```
