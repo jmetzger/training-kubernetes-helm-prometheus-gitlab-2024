@@ -106,8 +106,9 @@
      * [Job nur händisch über Pipelines starten](gitlab/rules/only-web.md)
      * [Auch weiterlaufen, wenn Job fehlschlägt](gitlab/jobs/allow_failure.md)
 
-  1. gitlab ci/cd docker
+  1. gitlab ci/cd - docker
      * [Docker image automatisiert bauen - gitlab registry](/gitlab/09-use-gitlab-registry.md)
+     * [Docker image automatisiert bauen - docker hub registry](gitlab/09a-docker-build-use-docker-hub.md)
     
   1. gitlab ci/cd - Documentation 
      * [gitlab ci/cd predefined variables](https://docs.gitlab.com/ee/ci/variables/predefined_variables.html)
