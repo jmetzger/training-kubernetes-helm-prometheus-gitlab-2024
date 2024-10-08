@@ -32,8 +32,8 @@ grafana:
   fullnameOverride: grafana
   ingress:
     enabled: true
+    ingressClassName: nginx
     # must be set, otherwice it is not working
-    helm upgrade prometheus prometheus-community/kube-prometheus-stack -f values.yml --install --namespace monitoring --create-namespace --version 65.1.0
     hosts:
       - grafana.tln1.t3isp.de
 
