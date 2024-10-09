@@ -58,7 +58,7 @@ helm -n monitoring get notes prometheus
 
 # Get pod that runs prometheus 
 kubectl -n monitoring get service 
-kubectl -n monitoring port-forward svc/prometheus-prometheus 9091 &
+kubectl -n monitoring port-forward svc/prometheus-prometheus 9091:http-web &
 
 ```
 
