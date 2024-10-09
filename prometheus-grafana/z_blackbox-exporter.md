@@ -134,8 +134,9 @@ kubectl apply -f service.yml
   * blackbox services should now appear under blackbox_microservices
   * and not being dropped
 
-## Step 10: Unter http://64.227.125.201:30090/targets?search= gucken
+## Step 10: Unter Prometheus gucken
 
+  * In targets (z.B. http://localhost:9091/targets?search=) 
   * .. ob das funktioniert
 
 ## Step 11: Hauptseite (status code 200) 
