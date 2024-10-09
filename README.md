@@ -77,6 +77,7 @@
      * [01 Kubernetes Secrets in gitlab ci/cd](gitlab/kubernetes/secrets-in-gitlab.md)
      * [02 Access Kubernetes](gitlab/kubernetes/02-step-access-kubernetes.md)
      * [03 Working with environments](gitlab/kubernetes/03-working-with-environments.md)
+     * [04 Deploy manifests to cluster](gitlab/kubernetes/04-deploy-to-cluster-md)
   
   1. gitlab ci/cd - Überblick 
      * [gitlab Architektur](gitlab/architecture.md)
