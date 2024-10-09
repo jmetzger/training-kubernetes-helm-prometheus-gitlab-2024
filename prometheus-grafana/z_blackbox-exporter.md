@@ -149,32 +149,7 @@ kubectl apply -f service.yml
 ## Step 12: pod vom service stoppen
 
 ```
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: apple-deployment
-spec:
-  selector:
-    matchLabels:
-      app: apple
-  replicas: 8
-  template:
-    metadata:
-      labels:
-        app: apple
-    spec:
-      containers:
-      - name: apple-app
-        image: hashicorp/http-echo
-        args:
-        - "-text=apple-<dein-name>"
-
-
-```
-
-```
-kubectl apply -f apple.yml # (deployment)
-
+kubectl delete pod apple-app
 ```
 
 ## Step 13: status_code 0
