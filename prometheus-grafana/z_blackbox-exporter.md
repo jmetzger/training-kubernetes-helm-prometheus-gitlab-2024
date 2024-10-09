@@ -8,7 +8,7 @@
 
 ```
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
-helm install my-prometheus-blackbox-exporter prometheus-community/prometheus-blackbox-exporter --version 8.0.1 --namespace monitoring --create-namespac9
+helm install my-prometheus-blackbox-exporter prometheus-community/prometheus-blackbox-exporter --version 9.0.1 --namespace monitoring --create-namespace
 
 ```
 
