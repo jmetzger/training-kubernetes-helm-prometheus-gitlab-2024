@@ -71,6 +71,8 @@ kubectl -n monitoring port-forward svc/prometheus-prometheus 9091:http-web &
 ssh -L 9091:localhost:9091 tln1@164.92.129.7
 ```
 
+  * Under Connection -> SSH -> Tunnels 
+
 ![image](https://github.com/user-attachments/assets/5df83fb0-047d-4b30-8d01-89d20ce67d49)
 
 
