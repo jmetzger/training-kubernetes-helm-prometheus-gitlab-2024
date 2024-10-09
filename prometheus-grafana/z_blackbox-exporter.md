@@ -158,3 +158,16 @@ kubectl delete pod apple-app
 
   * Metrik angekommen `?
   * http://64.227.125.201:30090/graph?g0.expr=probe_http_status_code&g0.tab=1&g0.display_mode=lines&g0.show_exemplars=0&g0.range_input=1h
+
+
+## Step 14: add Blackbox Exporter Dashboard 
+
+  * https://grafana.com/grafana/dashboards/14928-prometheus-blackbox-exporter/
+  * Copy ID
+
+![image](https://github.com/user-attachments/assets/169cde5b-262b-4a57-8625-95d58094d490)
+
+![image](https://github.com/user-attachments/assets/29be2973-e788-453f-8659-4def9724240b)
+
+![image](https://github.com/user-attachments/assets/72735f3d-b2ac-49ce-bc04-577eb08d335d)
+
