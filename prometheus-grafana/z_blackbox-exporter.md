@@ -140,6 +140,9 @@ kubectl apply -f service.yml
 
 ## Step 11: Hauptseite (status code 200) 
 
+![image](https://github.com/user-attachments/assets/8969e578-6f97-4246-954f-6fa0fad26020)
+
+
   * Metrik angekommen `?
   * http://64.227.125.201:30090/graph?g0.expr=probe_http_status_code&g0.tab=1&g0.display_mode=lines&g0.show_exemplars=0&g0.range_input=1h
 
