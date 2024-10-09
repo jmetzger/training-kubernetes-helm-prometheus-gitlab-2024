@@ -43,7 +43,7 @@ probe_http_status_code 200
 
 ```
 # From within curlimages/curl pod 
-curl http://my-prometheus-blackbox-exporter.monitoring:9115/probe?target=apple-service.app&module=http_2xx
+curl http://my-prometheus-blackbox-exporter.monitoring:9115/probe?target=apple-service.default&module=http_2xx
 ```
 
 
