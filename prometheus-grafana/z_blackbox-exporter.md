@@ -102,7 +102,7 @@ prometheus:
 
 ```
 # von kube-prometheus-grafana in values und ugraden 
- helm upgrade prometheus prometheus-community/kube-prometheus-stack -f values.yml --namespace monitoring --create-namespace --version 61.3.1
+ helm upgrade prometheus prometheus-community/kube-prometheus-stack -f values.yml --install --namespace monitoring --create-namespace --version 65.1.0
 ```
 
 ## Step 8: annotation in service einfügen 
