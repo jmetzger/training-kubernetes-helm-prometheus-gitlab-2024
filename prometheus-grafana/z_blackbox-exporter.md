@@ -42,6 +42,10 @@ probe_http_status_code 200
 ## Step 4: Test apple-service with Curl 
 
 ```
+kubectl run -it --rm curltest --image=curlimages/curl -- sh 
+```
+
+```
 # From within curlimages/curl pod 
 curl http://my-prometheus-blackbox-exporter.monitoring:9115/probe?target=apple-service.default&module=http_2xx
 ```
