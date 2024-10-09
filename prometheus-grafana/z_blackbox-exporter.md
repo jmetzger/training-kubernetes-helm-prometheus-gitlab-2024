@@ -51,7 +51,7 @@ curl http://my-prometheus-blackbox-exporter.monitoring:9115/probe?target=apple-s
 ```
 
 
-## Step 5: Scrape Config (We want to get all services being labeled example.io/should_be_probed = true
+## Step 5: Scrape Config (We want to get all services being annotated with example.io/should_be_probed = true
 
 ```
 prometheus:
