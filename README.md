@@ -73,6 +73,9 @@
      * [Secrets Example 1](kubernetes/secrets/uebung-secrets.md)
      * [Änderung in ConfigMap erkennen und anwenden](https://github.com/stakater/Reloader)
     
+  1. Kubernetes Secrets in gitlab ci/cd
+     * [Kubernetes Secrets in gitlab ci/cd](gitlab/kubernetes/secrets-in-gitlab.md)
+    
   1. gitlab ci/cd - Überblick 
      * [gitlab Architektur](gitlab/architecture.md)
      * [Overview/Pipelines](/gitlab/01-ci-cd-overview.md)
